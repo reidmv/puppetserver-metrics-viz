@@ -50,4 +50,5 @@ def multi_datapoint_line_graph(http_metrics_series, config):
     plt.legend(loc='upper left')
     plt.tight_layout()
     # plt.show()
-    plt.figure().savefig()
+    # plt.figure().savefig()
+    plt.savefig(img_file)
