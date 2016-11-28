@@ -17,6 +17,8 @@ def single_datapoint_bar_graph(http_metrics):
 
 
 def multi_datapoint_line_graph(http_metrics_series, config):
+    plt.clf()
+
     x_pos = np.arange(len(http_metrics_series))
     data_field = config['data_field']
     data_label = config['data_label']
